@@ -1,0 +1,50 @@
+1. main method:
+
+Input: Country name, Noongar Season choice (Y/N), and month (1-12).
+Output: The season in the specified country during the given month.
+Functionality:
+Reads the country name, Noongar Season choice, and month from the user.
+Performs input validation for the country and month inputs.
+Calls the appropriate findSeason method based on the country and Noongar Season choice.
+Prints the season information.
+
+2. findSeason method:
+
+Input: Country name, month, and Noongar Season choice (optional).
+Output: The season in the specified country during the given month.
+Functionality:
+Determines the country-specific season by calling the corresponding country-specific method (getSeasonInAustralia, getSeasonInCanada, getSeasonInIndia).
+If the Noongar Season choice is true (applicable for Australia), calls the getNoongarSeason method to determine the Noongar season.
+Returns the determined season.
+
+3. getSeasonInAustralia, getSeasonInCanada, getSeasonInIndia methods:
+
+Input: Month (1-12).
+Output: The season for the specified country during the given month.
+Functionality:
+Compares the month with specific ranges to determine the corresponding season.
+Returns the determined season.
+
+4. getNoongarSeason method:
+
+Input: Month (1-12).
+Output: The Noongar season for the given month.
+Functionality:
+Compares the month with specific ranges to determine the corresponding Noongar season (applicable only for Australia).
+Returns the determined Noongar season.
+
+5. isValidCountry method:
+
+Input: Country name.
+Output: Boolean value indicating the validity of the country name.
+Functionality:
+Compares the country name with predefined valid country names (Australia, Canada, India).
+Returns true if the country name is valid, false otherwise.
+
+6. isValidMonth method:
+
+Input: Month (1-12).
+Output: Boolean value indicating the validity of the month.
+Functionality:
+Checks if the month falls within the valid range (1-12).
+Returns true if the month is valid, false otherwise.

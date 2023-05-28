@@ -12,6 +12,17 @@ public class SeasonFinder {
             return;
         }
 
+        System.out.print("Display Noongar Season (Only applicable for Australia) Y/N: ");
+        String NoongarSeason = scanner.nextLine();
+
+        boolean noongarBit;
+        if (NoongarSeason == "Y"){
+            noongarBit = true;
+        }
+        else{
+            noongarBit = false;
+        }
+
         System.out.print("Enter the month (1-12): ");
         int month;
         try {
