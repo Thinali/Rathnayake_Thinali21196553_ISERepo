@@ -1,0 +1,95 @@
+1. Valid input for Australia without Noongar Season choice:
+
+Input: Country name = "Australia", Noongar Season choice = "N", Month = 6
+Expected Output: The season in Australia during month 6 is Winter
+Code Analysis:
+    - The code first checks if the country is "Australia" and the Noongar Season choice is not selected.
+    - It then calls the getSeasonInAustralia method, which determines the season in Australia based on the given month.
+    - The method uses a series of conditional statements to map the month to the corresponding season.
+    - In this case, since the month is 6, which falls within the range of 6-8, the output should be "Winter".
+
+2. Valid input for Spain without Noongar Season choice:
+
+Input: Country name = "Spain", Noongar Season choice = "N", Month = 4
+Expected Output: The season in Spain during month 4 is Spring
+Code Analysis:
+    - The code checks if the country is "Spain" and the Noongar Season choice is not selected.
+    - It then calls the getSeasonInSpainJapan method, which determines the season in Spain or Japan based on the given month.
+    - Similar to the previous method, it uses conditional statements to map the month to the corresponding season.
+    - In this case, since the month is 4, which falls within the range of 3-5, the output should be "Spring".
+
+3. Valid input for Malaysia without Noongar Season choice:
+
+Input: Country name = "Malaysia", Noongar Season choice = "N", Month = 10
+Expected Output: The season in Malaysia during month 10 is Inter-monsoon
+Code Analysis:
+    - The code checks if the country is "Malaysia" and the Noongar Season choice is not selected.
+    - It then calls the getSeasonInMalaysiaSriLanka method, which determines the season in Malaysia or Sri Lanka based on the given month.
+    - Again, the method uses conditional statements to map the month to the corresponding season.
+    - In this case, since the month is 10, which falls within the range of 10-11, the output should be "Inter-monsoon".
+
+4. Valid input for Mauritius without Noongar Season choice:
+
+Input: Country name = "Mauritius", Noongar Season choice = "N", Month = 3
+Expected Output: The season in Mauritius during month 3 is Summer
+Code Analysis:
+    - The code checks if the country is "Mauritius" and the Noongar Season choice is not selected.
+    - It then calls the getSeasonInMauritius method, which determines the season in Mauritius based on the given month.
+    - The method uses conditional statements to map the month to the corresponding season.
+    - In this case, since the month is 3, which falls within the range of 1-4, the output should be "Summer".
+
+5. Valid input for Japan without Noongar Season choice:
+
+Input: Country name = "Japan", Noongar Season choice = "N", Month = 12
+Expected Output: The season in Japan during month 12 is Winter
+Code Analysis:
+    - The code checks if the country is "Japan" and the Noongar Season choice is not selected.
+    - It then calls the getSeasonInSpainJapan method to determine the season in Spain or Japan based on the given month.
+    - Using conditional statements, it maps the month to the corresponding season.
+    - In this case, since the month is 12, which falls within the range of 12-2, the output should be "Winter".
+
+6. Valid input for Sri Lanka without Noongar Season choice:
+
+Input: Country name = "Sri Lanka", Noongar Season choice = "N", Month = 7
+Expected Output: The season in Sri Lanka during month 7 is Southeast Monsoon
+Code Analysis:
+    - The code checks if the country is "Sri Lanka" and the Noongar Season choice is not selected.
+    - It then calls the getSeasonInMalaysiaSriLanka method to determine the season in Malaysia or Sri Lanka based on the given month.
+    - Using conditional statements, it maps the month to the corresponding season.
+    - In this case, since the month is 7, which falls within the range of 5-9, the output should be "Southeast Monsoon".
+
+7. Valid input for Australia with Noongar Season choice:
+
+Input: Country name = "Australia", Noongar Season choice = "Y", Month = 2
+Expected Output: The season in Australia during month 2 is Unknown
+Code Analysis:
+    - The code checks if the country is "Australia" and the Noongar Season choice is selected.
+    - It then calls the findSeason method with the additional noongarBit parameter set to true.
+    - Inside the findSeason method, it checks if the Noongar Season choice is selected for Australia.
+    - Since the month is 2, which does not fall within any of the Noongar seasons, the output should be "Unknown".
+
+8. Invalid country input:
+
+Input: Country name = "Canada", Noongar Season choice = "N", Month = 6
+Expected Output: Invalid country name. Please try again.
+Code Analysis:
+    - The code checks if the country is a valid option by calling the isValidCountry method.
+    - Since "Canada" is not a valid country in the code's predefined list, it should output an error message.
+
+9. Invalid month input:
+
+Input: Country name = "Australia", Noongar Season choice = "N", Month = 15
+Expected Output: Invalid month. Please try again.
+Code Analysis:
+    - The code checks if the month is valid by calling the isValidMonth method.
+    - Since 15 is not within the range of 1-12, it should output an error message.
+
+10. Valid input for Australia with Noongar Season choice and nonexistent Noongar season:
+
+Input: Country name = "Australia", Noongar Season choice = "Y", Month = 9
+Expected Output: Noongar Seasons do not apply to entered Country. Please try again.
+Code Analysis:
+    - The code checks if the country is "Australia" and the Noongar Season choice is selected.
+    - It then calls the findSeason method with the additional noongarBit parameter set to true.
+    - Inside the findSeason method, it checks if the Noongar Season choice is selected for Australia.
+    - Since the month is 9, which does not correspond to any Noongar season, it should output a message indicating that Noongar seasons do not apply to the entered country.

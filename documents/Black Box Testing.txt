@@ -1,0 +1,59 @@
+1. Valid input for Australia:
+
+Input: Country name = "Australia", Noongar Season choice = "N", Month = 6
+Expected output: The season in Australia during month 6 is Winter
+Justification: This scenario tests the code's ability to correctly determine the season in Australia during a specific month. No Noongar Season is chosen.
+
+2. Valid input for Spain:
+
+Input: Country name = "Spain", Noongar Season choice = "N", Month = 4
+Expected output: The season in Spain during month 4 is Spring
+Justification: This scenario tests the code's ability to correctly determine the season in Spain during a specific month. No Noongar Season is chosen.
+
+3. Valid input for Malaysia:
+
+Input: Country name = "Malaysia", Noongar Season choice = "N", Month = 10
+Expected output: The season in Malaysia during month 10 is Inter-monsoon
+Justification: This scenario tests the code's ability to correctly determine the season in Malaysia during a specific month. No Noongar Season is chosen.
+
+4. Valid input for Mauritius with Noongar Season choice:
+
+Input: Country name = "Mauritius", Noongar Season choice = "Y", Month = 12
+Expected output: Noongar Seasons do not apply to entered Country. Please try again.
+Justification: This scenario tests the code's ability to handle the case when a Noongar Season choice is made for a country where Noongar Seasons do not apply.
+
+5. Invalid country name:
+
+Input: Country name = "Germany", Noongar Season choice = "N", Month = 3
+Expected output: Invalid country name. Please try again.
+Justification: This scenario tests the code's ability to handle an invalid country name input and prompt the user to try again.
+
+6. Valid input for Sri Lanka:
+
+Input: Country name = "Sri Lanka", Noongar Season choice = "N", Month = 7
+Expected output: The season in Sri Lanka during month 7 is Southeast Monsoon
+Justification: This scenario tests the code's ability to correctly determine the season in Sri Lanka during a specific month. No Noongar Season is chosen.
+
+7. Valid input for Japan:
+
+Input: Country name = "Japan", Noongar Season choice = "N", Month = 12
+Expected output: The season in Japan during month 12 is Winter
+Justification: This scenario tests the code's ability to correctly determine the season in Japan during a specific month. No Noongar Season is chosen.
+
+8. Valid input for Australia with Noongar Season choice:
+
+Input: Country name = "Australia", Noongar Season choice = "Y", Month = 2
+Expected output: The season in Australia during month 2 is Bunuru
+Justification: This scenario tests the code's ability to correctly determine the Noongar Season in Australia during a specific month.
+
+9. Valid input for Malaysia with Noongar Season choice:
+
+Input: Country name = "Malaysia", Noongar Season choice = "Y", Month = 9
+Expected output: Noongar Seasons do not apply to entered Country. Please try again.
+Justification: This scenario tests the code's ability to handle the case when a Noongar Season choice is made for a country where Noongar Seasons do not apply.
+
+10. Invalid month:
+
+Input: Country name = "Australia", Noongar Season choice = "N", Month = 15
+Expected output: Invalid month. Please try again.
+Justification: This scenario tests the code's ability to handle an invalid month input and prompt the user to try again.
